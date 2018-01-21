@@ -1,0 +1,314 @@
+/* general container element to constrain content width on wider screens */
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto; 
+}
+
+/* Your CSS rules go here */
+
+/*The top part of my html including head header and navigation bar*/
+body {
+  font-family: Lato, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  margin: 0;
+}
+
+h1, h2, h3, h4 {
+  font-family: Raleway, "Helvetica Neue", Helvetica, sans-serif;
+  font-weight:300;
+  margin:0px;
+}
+
+p{
+  line-height: 1.43;
+}
+
+header{
+  color:white;
+  background: linear-gradient(#391D18, #814236);
+  min-height: 100px;
+  margin-top:2.5rem;
+}
+
+h1{
+  padding-top:0.5em;
+}
+
+a:hover, a:focus {
+  color:white;
+}
+
+nav{
+  background-color: #391d18;
+  top: 0;
+  left: 0;
+  z-index:1;
+  width:100%;
+  position:fixed;
+  height:2.6rem;
+}
+nav ul {
+  padding-left: 15px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+nav li{
+  display: inline-block;
+  padding:0.5em;
+}
+nav a{
+  color:white;
+  text-decoration: none;
+}
+.shop{
+  float:right;
+}
+h2{
+  font-variant: small-caps;
+  text-align: center;
+  padding-bottom:1.6em;
+}
+
+.button {
+  background:#814236;
+  border:1.5px solid #391d18;
+  text-decoration: none;
+  color:white;
+  padding:0.5rem;
+  font-size:12px;
+  display:none;
+
+}
+  
+.button:hover, .button:focus{
+  color:#5d3027;
+}
+.tagline{
+  padding-bottom:1em;
+  padding-top:0.5em;
+  margin:0;
+}
+/*The css part Features--section1*/
+#sec1, #sec3{
+  background-color:#f8f8f8;
+  padding-top:2.6em;
+  padding-bottom:2em;
+
+}
+svg{
+  max-height:60px;
+  max-width: 60px;
+  fill: #814236;
+  float:left;
+  margin: 0.5em;
+}
+
+.inside p {
+  overflow: hidden;
+}
+
+/*The css part of Useful--section2*/
+
+#sec2{
+  background-color: #ebebeb;
+  padding-top:2.6em;
+  padding-bottom:2em; 
+}
+#sec2 p{
+  padding-left:0.6em;
+}
+#note{
+  background-image: url('../img/note-taking.jpg');
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position:center;
+  height:150px;
+}
+#art{
+  background-image: url('../img/art.jpg');
+  background-size:cover;
+  background-position:center;
+  height:150px;  
+}
+#draft{
+  background-image: url('../img/drafting.jpg');
+  background-size:cover;
+  background-position:center;
+  height:150px;
+}
+#color{
+  background-image: url('../img/coloring.jpg');
+  background-size:cover;
+  background-position:center;  
+  height:150px;
+}
+h3{
+  margin:0.5em;
+}
+
+/*Loved People part--section3*/
+
+img{
+  border-radius: 50%;
+  float:left;
+  margin: 0.6em;
+}
+#sec3 p{
+  overflow:hidden;
+}
+#sec3 h3{
+  padding-left:3.7em;
+}
+.title{
+  font-size:80%;
+  color:#999999;
+}
+
+/*Footer part--section4*/
+#sec4{
+  background-color:#391d18;
+  color:#eeeeee;
+}
+.link, .icon{
+  color:#aaaaaa;
+  text-decoration: none;
+}
+.link:hover, .link:focus, .icon:hover, .icon:focus{
+  color:white;
+}
+.graph{
+  font-size:2.5em;
+}
+
+/*this part is about flex box in all of section*/
+.flex-column, #footer, .flex-box{
+  flex-basis:100%;
+}
+#footer{
+  padding-bottom:3em;
+}
+
+.flex-container{
+  display:flex;
+  align-items: stretch;
+  flex-flow:row wrap;
+}
+
+.card {
+  border-radius:3px;
+  border:2px solid #dfdfdf;
+  background:white;
+  border-radius: 3px;
+  flex-basis: 100%;
+  margin:0.5em;
+}
+#sec3 .card{
+  border:none;
+  background-color:#f8f8f8;
+  flex-basis: 100%;
+  margin:0.5em;
+}
+
+@media (min-width: 768px) {
+  header{
+      background-image: url('../img/pencil-header-sm.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;   
+      background-position:center bottom; 
+      color:black;
+      margin:auto;
+      min-height:250px;
+      padding-top:4em;  
+
+  }
+  svg{
+      float:none;
+  }
+  #skip{
+      display: none;
+  }
+  #sec1{
+      text-align: center;
+  }
+  .button{
+      display:inline;
+  }
+  .inside{
+      display: block;
+  }
+  
+  .flex-item, .flex-column {
+      flex-basis: 47%;
+  }
+  .icon{
+      float:right;
+      padding-right:5em;
+  }
+  .tagline{
+      font-size:20px;
+      max-width: 375px;
+  }
+  #sec3 .card{
+  flex-basis: 100%;
+  margin:0.5em;
+  }
+  .graph{
+      font-size:1.2em;
+  }
+  .container { 
+      width: 750px; 
+  }
+}
+@media (min-width: 992px) {
+  header{
+      background-image: url('../img/pencil-header-md.jpg');
+      color:black;
+      margin:auto;
+      min-height: 250px;
+  }
+  .flex-box{
+    flex-basis:45%;
+  }
+  #sec3 .card{
+  flex-basis: 30%;
+  margin:0.5em;
+  }
+  .tagline{
+      font-size:20px;
+      max-width: 485px;
+  }
+  
+  .container { width: 970px; } 
+}
+@media (min-width: 1200px) {
+  header{
+      background-image: url('../img/pencil-header-lg.jpg');
+      background-position: center bottom;  
+      color:black;
+      min-height: 250px;
+      padding-bottom:3em;
+      padding-top:4em;  
+  }
+  h1{
+      font-size:100px;
+      font-weight:100;
+  }
+
+  .tagline{
+      font-size:30px;
+      max-width: 585px;
+  }
+  #skip{
+      display:none;
+  }
+  .flex-item {
+      flex-basis: 23%;
+  }
+  .container { 
+      width: 1170px; 
+  } 
+}
+
