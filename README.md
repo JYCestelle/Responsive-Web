@@ -1,6 +1,6 @@
 # Responsive Challenge - Pencil
 One of the most common web development projects is a marketing site for an organization or product. Most every organization and product has one, and it's amazing how many of them are really terrible, especially on small mobile device screens.
-/Users/orange/Downloads/pencil-full-1400.png
+![alt tag](https://info343-au16.github.io/img/pencil-home-large.png)
 
 This project is a beautifully designed responsive website for a revolutionary product. The site of this website responds to the size of screen it is rendered on, and will adjust its layout and styling accordingly.
 
